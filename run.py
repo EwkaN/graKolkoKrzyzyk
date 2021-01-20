@@ -22,7 +22,7 @@ Plansza = [[None] * 3, [None] * 3, [None] * 3, ]  # plansza zawiera w sobie trzy
 
 # rysujemy okno programu
 
-pg.init()  # funkcja ktor inicjalizuje pozostałe funkcje w bibliotece pygame
+pg.init()  # funkcja ktora inicjalizuje pozostałe funkcje w bibliotece pygame
 FPS = 30  # liczby wyswietlonych klatek za sekunde
 
 Zegar = pg.time.Clock()
@@ -152,7 +152,7 @@ def NarysujSymbol(Wiersz, Kolumna):
 def SprawdzPole():
     #czytamy koordynaty myszki
     X,Y = pg.mouse.get_pos()
-    #wspolrzedna X
+    #wspolrzedna X szerokosc
     if(X < Szerokosc / 3):
         Kolumna = 1
     elif(X < Szerokosc / 3 * 2):
@@ -161,7 +161,7 @@ def SprawdzPole():
         Kolumna = 3
     else:
         Kolumna = None
-        #wspolrzedna Y
+        #wspolrzedna Y wysokosc
     if (Y < Wysokosc/ 3):
         Wiersz = 1
     elif (Y < Wysokosc / 3 * 2):
